@@ -1,0 +1,43 @@
+body{
+    background-color: cornsilk;
+    margin: 0px;
+    height: 100vh;
+}
+nav{
+    background-color: #9323fb;
+    display: flex;
+    height: 50px;
+}
+.Logo{
+    background-color: rgb(251, 58, 97);
+    width: 15%;
+}
+.SearchBar{
+    background-color: aquamarine;
+    width: 70%;
+}
+.Profile{
+    background-color: chartreuse;
+    width: 15%;
+}
+.Main{
+    display: flex;
+    height: 100vh;
+}
+.Center{
+    width: 85%;
+    height: 100vh;
+}
+.Options{
+    background-color: brown;
+    height: 100%;
+    width: 15%;
+}
+.Keywords{
+    background-color: cadetblue;
+    height: 30px;
+}
+.Grids{
+    background-color: gray;
+    height:100vh;
+}
