@@ -1,43 +1,412 @@
-body{
-    background-color: cornsilk;
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* background-color: cornsilk; */
     margin: 0px;
     height: 100vh;
 }
-nav{
-    background-color: #9323fb;
+
+.NavBar {
+    /* background-color: #9323fb; */
     display: flex;
-    height: 50px;
+    height: 56px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: calc(100% - 32px);
+    position: fixed;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
 }
-.Logo{
-    background-color: rgb(251, 58, 97);
+
+.Logo {
+    /* background-color: rgb(251, 58, 97); */
     width: 15%;
+    display: flex;
+    align-items: center;
 }
-.SearchBar{
-    background-color: aquamarine;
+
+.NavBar .Logo a .material-symbols-outlined {
+    font-size: 24px;
+    padding: 8px;
+    font-weight: 300;
+}
+
+.logo {
+    height: 20px;
+    width: 90px;
+    margin-left: 15px;
+}
+
+.Search {
+    /* background-color: aquamarine; */
     width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.Profile{
-    background-color: chartreuse;
+
+.SearchBar {
+    display: flex;
+    background-color: #ffffff;
+    width: 568px;
+    height: 40px;
+    border: 1px solid #E2E2E2;
+    border-radius: 20px;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.SearchBar button {
+    width: 12%;
+    height: 100%;
+    border: none;
+    /* border-left: 1px solid;   */
+    /* border-color: #d3d3d3;   */
+    background-color: #f0f0f0;
+    margin: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* .SearchBar a img {
+    width: 13px;
+    height: 13px;
+    margin-top: 9px;
+} */
+.SearchBar a .material-symbols-outlined {
+    height: 24px;
+    width: 50px;
+    font-weight: 200;
+}
+
+.TextBar {
+    border: 0px solid transparent;
+    background: #ffffff;
+    border-radius: 20px;
+    width: 500px;
+    padding-left: 5px;
+}
+
+.VocalSearch a {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 50px;
+    text-decoration: none;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.Search .VocalSearch a .material-symbols-outlined {
+    font-size: 25px;
+}
+
+.Profile {
+    /* background-color: chartreuse; */
     width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
-.Main{
+
+.Features {
+    width: 80%;
+    display: flex;
+    height: 100%;
+    margin-left: 80px;
+    align-items: center;
+}
+
+.Features a .material-symbols-outlined {
+    font-weight: 300;
+}
+
+.Features a {
+    color: black;
+    text-decoration: none;
+    height: 40px;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.Features a div {
+    /* color: black;
+    text-decoration: none; */
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #f0f0f0;
+    border-radius: 1000px; */
+}
+
+.Features .User {
+    /* color: black;
+    text-decoration: none; */
+    height: 35px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00887A;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.Features a div:hover {
+    /* color: black;
+    text-decoration: none; */
+    height: 40px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 50px;
+}
+
+.Features a :hover {
+    color: black;
+    text-decoration: none;
+    height: 40px;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 1000px;
+}
+
+.Main {
     display: flex;
     height: 100vh;
 }
-.Center{
-    width: 85%;
+
+.Center {
+    width: 84%;
     height: 100vh;
 }
-.Options{
-    background-color: brown;
+
+.Options {
+    /* background-color: brown; */
+    height: 100vh;
+    width: 16%;
+    position: fixed;
+    overflow-x: auto;
+    top: 56px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Features1 {
+    width: calc(100% - 22px);
+    padding-left: 11px;
+    padding-right: 11px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.Features1 ul {
+    list-style: none;
+    margin-top: 13px;
+    width: 100%;
+    padding-left: 0px;
+}
+.Features1 ul .First{
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+.Features1 ul .First:hover{
+    background-color: #E6E6E6;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.Features1 ul .First .Name{
+    font-weight: bold;
+}
+.Features1 ul li {
+    height: 40px;
+    width: 100%;
+}
+
+.Features1 ul li div{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+.Features1 ul li div:hover{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+.Features1 ul li div .material-symbols-outlined {
+    font-size: 24px;
+    width: 20%;
+    padding-left: 12px;
+}
+.Features1 ul .First div .material-symbols-outlined {
+    font-size: 24px;
+    width: 20%;
+    padding-left: 12px;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.Features1 ul li div .Name {
+    font-size: 14px;
+    margin-left: 18px;
+}
+
+.Keywords {
+    /* background-color: cadetblue; */
+    position: fixed;
+    top: 56px;
+    left: 16%;
+    background-color: white;
+    width: 1285px;
+    z-index: 3;
+}
+.KeywordsContent{
     height: 100%;
-    width: 15%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 15px;
 }
-.Keywords{
-    background-color: cadetblue;
-    height: 30px;
+.KeywordsContent .first {
+    background-color: #000000;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
 }
-.Grids{
+
+.KeywordsContent .first:hover {
+    background-color: #000000;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.KeywordsContent .word {
+    background-color: #f0f0f0;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.KeywordsContent .word:hover {
+    background-color: #e1dcdc;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.KeywordsContent .arrow div {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.KeywordsContent .arrow div .material-symbols-outlined {
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+    border-radius: 100px;
+    width: 30px;
+    font-weight: 200;
+}
+.KeywordsContent .arrow div .material-symbols-outlined:hover {
+    background-color: #f0f0f0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+    border-radius: 100px;
+    width: 30px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.Grids {
     background-color: gray;
-    height:100vh;
+    height: calc(100vh - 56px);
+    position: absolute;
+    z-index: 0;
+    top: 112px;
+    left: 16%;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+    /* display: none; */
+    margin-left: 1500px !important;
+}
+
+::-webkit-scrollbar:hover {
+    width: 10px;
+    height: 15px;
+    margin-left: 1500px !important;
+    /* background-color: #e6e6e7;    */
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    /* -webkit-box-shadow:  0 0 6px rgba(0, 0, 0, 0.5); */
+    background-color: #c9c9c9 !important;
 }
