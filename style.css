@@ -32,6 +32,8 @@ body {
     font-size: 24px;
     padding: 8px;
     font-weight: 300;
+    text-decoration: none;
+    color: black;
 }
 
 .logo {
@@ -80,6 +82,8 @@ body {
     height: 24px;
     width: 50px;
     font-weight: 200;
+    text-decoration: none;
+    color: black;
 }
 
 .TextBar {
@@ -99,6 +103,7 @@ body {
     background-color: #f0f0f0;
     border-radius: 50px;
     text-decoration: none;
+    color: black;
     font-variation-settings:
         'FILL' 1,
         'wght' 400,
@@ -229,42 +234,50 @@ body {
     width: 100%;
     padding-left: 0px;
 }
-.Features1 ul .First{
+
+.Features1 ul .First {
     background-color: #f3f3f3;
     border-radius: 10px;
 }
-.Features1 ul .First:hover{
+
+.Features1 ul .First:hover {
     background-color: #E6E6E6;
     cursor: pointer;
     border-radius: 10px;
 }
-.Features1 ul .First .Name{
+
+.Features1 ul .First .Name {
     font-weight: bold;
 }
+
 .Features1 ul li {
     height: 40px;
     width: 100%;
 }
 
-.Features1 ul li div{
+.Features1 ul li div {
     display: flex;
     align-items: center;
     height: 40px;
     width: 100%;
 }
-.Features1 ul li div:hover{
+
+.Features1 ul li div:hover {
     display: flex;
     align-items: center;
     height: 40px;
     width: 100%;
     background-color: #F2F2F2;
     border-radius: 10px;
+    cursor: pointer;
 }
+
 .Features1 ul li div .material-symbols-outlined {
     font-size: 24px;
     width: 20%;
     padding-left: 12px;
 }
+
 .Features1 ul .First div .material-symbols-outlined {
     font-size: 24px;
     width: 20%;
@@ -281,6 +294,353 @@ body {
     margin-left: 18px;
 }
 
+.Features2 {
+    width: calc(100% - 22px);
+    padding-left: 11px;
+    padding-right: 11px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.Features2 ul {
+    list-style: none;
+    margin-top: 13px;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.Features2 ul li {
+    height: 40px;
+    width: 100%;
+}
+
+.Features2 ul li div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+.Features2 ul li div:hover {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Features2 ul li div .material-symbols-outlined {
+    font-size: 24px;
+    width: 20%;
+    padding-left: 12px;
+}
+
+.Features2 ul li div .Name {
+    font-size: 14px;
+    margin-left: 18px;
+}
+
+.subscriptions {
+    width: calc(100% - 22px);
+    padding-left: 11px;
+    padding-right: 11px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.subscriptions .title {
+    font-size: 16px;
+    font-weight: 550;
+    padding-left: 12px;
+    margin-top: 15px;
+}
+
+.subscriptions ul {
+    list-style: none;
+    margin-top: 10px;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.subscriptions ul li {
+    height: 40px;
+    width: 100%;
+
+}
+
+.subscriptions ul li div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    padding-left: 12px;
+}
+
+.subscriptions ul li div:hover {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.subscriptions ul li div img {
+    height: 24px;
+    width: 24px;
+    border-radius: 100px;
+}
+
+.subscriptions ul li div .material-symbols-outlined {
+    height: 24px;
+    width: 24px;
+    border-radius: 100px;
+}
+
+.subscriptions ul li div .Name {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.Explore {
+    width: calc(100% - 22px);
+    padding-left: 11px;
+    padding-right: 11px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.Explore .title {
+    font-size: 16px;
+    font-weight: 550;
+    padding-left: 12px;
+    margin-top: 15px;
+}
+
+.Explore ul {
+    list-style: none;
+    margin-top: 10px;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.Explore ul li {
+    height: 40px;
+    width: 100%;
+
+}
+
+.Explore ul li div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    padding-left: 12px;
+}
+
+.Explore ul li div:hover {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* .Explore ul li div img {
+    height: 24px;
+    width: 24px;
+    border-radius: 100px;
+} */
+
+.Explore ul li div .material-symbols-outlined {
+    height: 24px;
+    width: 24px;
+    border-radius: 100px;
+}
+
+.Explore ul li div .Name {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.Others {
+    width: calc(100% - 22px);
+    padding-left: 11px;
+    padding-right: 11px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.Others .title {
+    font-size: 16px;
+    font-weight: 550;
+    padding-left: 12px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.Others ul {
+    list-style: none;
+    margin-top: 10px;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.Others ul li {
+    height: 40px;
+    width: 100%;
+
+}
+
+.Others ul li div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    padding-left: 12px;
+}
+
+.Others ul li div:hover {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* .Others ul li div img {
+    height: 24px;
+    width: 24px;
+    border-radius: 100px;
+} */
+
+.Others ul li div .material-symbols-outlined {
+    height: 24px;
+    width: 24px;
+    border-radius: 100px;
+}
+
+.Others ul li div .Name {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.Settings {
+    width: calc(100% - 22px);
+    padding-left: 11px;
+    padding-right: 11px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.Settings ul {
+    list-style: none;
+    margin-top: 13px;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.Settings ul li {
+    height: 40px;
+    width: 100%;
+}
+
+.Settings ul li div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+.Settings ul li div:hover {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Settings ul li div .material-symbols-outlined {
+    font-size: 24px;
+    width: 20%;
+    padding-left: 12px;
+}
+
+.Settings ul li div .Name {
+    font-size: 14px;
+    margin-left: 18px;
+}
+
+.OptionsFooter {
+    width: calc(100% - 22px);
+    padding-left: 11px;
+    padding-right: 11px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.Footer1 {
+    list-style: none;
+    margin-top: 13px;
+    width: 100%;
+    padding-left: 0px;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    grid-auto-rows: minmax(0px, auto); */
+}
+
+.Footer1 a {
+    height: 40px;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    padding-left: 12px;
+}
+
+.Footer2 {
+    list-style: none;
+    margin-top: 13px;
+    width: 100%;
+    padding-left: 0px;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    grid-auto-rows: minmax(60px, auto); */
+}
+
+.Footer2 a {
+    height: 40px;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    padding-left: 12px;
+}
+.Footer2 a :hover{
+    height: 40px;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.Copyright{
+    margin-top: 15px;
+    width: 100%;
+    width: calc(100% - 22px);
+    padding-left: 11px;
+    padding-right: 11px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+.Correct{
+    padding-left: 12px;
+    padding-bottom: 100px;
+}
 .Keywords {
     /* background-color: cadetblue; */
     position: fixed;
@@ -290,7 +650,8 @@ body {
     width: 1285px;
     z-index: 3;
 }
-.KeywordsContent{
+
+.KeywordsContent {
     height: 100%;
     height: 56px;
     display: flex;
@@ -299,6 +660,7 @@ body {
     margin-left: 15px;
     margin-right: 15px;
 }
+
 .KeywordsContent .first {
     background-color: #000000;
     height: 32px;
@@ -365,6 +727,7 @@ body {
     width: 30px;
     font-weight: 200;
 }
+
 .KeywordsContent .arrow div .material-symbols-outlined:hover {
     background-color: #f0f0f0;
     font-size: 20px;
@@ -408,5 +771,5 @@ body {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     /* -webkit-box-shadow:  0 0 6px rgba(0, 0, 0, 0.5); */
-    background-color: #c9c9c9 !important;
+    background-color: #909090    !important;
 }
